@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       poem.innerHTML = `
         <a href="${poemLink}">
           <div class="card shadow border border-3">
-            <img src="https://bucket-for-sitet-testing.s3.ap-south-1.amazonaws.com/cover1.png" class="card-img-top" alt="poem-cover-image">
+            <img src="${item.coverImageUrl}" class="card-img-top" alt="poem-cover-image">
             <div>
               <p class='poem-title'>${item.title}</p>
               <p>
