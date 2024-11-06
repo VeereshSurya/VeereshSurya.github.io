@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("poems-row");
 
   // Replace with your API endpoint
-  const apiURL = "https://localhost:7072/api/Poems";
+  const apiURL = "https://poemapi-h4hth3arageegjcw.canadacentral-01.azurewebsites.net/api/Poems";
 
   const options = {
     strings: ["Software Engineer", ".NET Developer", "Kannada Poet", "Vlogger"],
