@@ -66,9 +66,9 @@
                 <div class="col-sm-12 col-md-12 poemDivision">
                     <h3 class="k-text text-center py-4" id="poemTitle"></h3>
                     <p class="k-text pb-4" id="poemBackground"></p>
-                    <p class="k-text text-center pb-4" id="poemLines"></p>
+                    <p class="k-text text-center pb-4" id="poemLines">Loading...Please wait</p>
                     <p class="k-text pb-4" id="poemSummary"></p>
-                    <p class="k-text text-end" id="authorName"> - Veeresh Surya C </p>
+                    <p class="k-text text-end" id="authorName"></p>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
 
         function fetchPoemDetails(poemId) {
             // Replace with your API endpoint
-            const apiURL = `https://localhost:7072/api/Poems/${poemId}`;
+            const apiURL = `https://poemapi-h4hth3arageegjcw.canadacentral-01.azurewebsites.net/api/Poems/${poemId}`;
 
             fetch(apiURL)
                 .then((response) => {
@@ -102,6 +102,7 @@
                     document.getElementById("poemBackground").textContent = poem.background;
                     document.getElementById("poemLines").innerHTML = convertNewlinesToBreaks(poem.lines);
                     document.getElementById("poemSummary").textContent = poem.summary;
+                    document.getElementById("authorName").textContent = poem.authorName
                 })
                 .catch((error) => {
                     console.error("There was a problem with the fetch operation:", error);
