@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: calibri;
+    font-family: calibri, serif;
     font-size: 1rem;
 }
 
@@ -316,11 +316,6 @@ a {
 #hobbies h5 {
     text-align: center;
 } 
-
-
-#hunger-index {
-    color: #e00000 !important;
-}
 
 
 /*============================
