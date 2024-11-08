@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const apiURL = "https://poemapi-h4hth3arageegjcw.canadacentral-01.azurewebsites.net/api/Poems";
 
   const options = {
-    strings: ["Software Engineer", ".NET Developer", "Kannada Poet", "Vlogger"],
+    strings: ["Software Engineer", ".NET Full Stack Developer", "Kannada Poet", "Vlogger"],
     typeSpeed: 100, // Speed of typing
     backSpeed: 70, // Speed of backspacing
     loop: true, // Repeat the animation

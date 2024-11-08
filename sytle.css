@@ -35,7 +35,8 @@ a {
 /* text indentation */
 #about-section p,
 #skills-info,
-#hobbies p
+#hobbies p,
+.p-journey
 {
     text-indent: 5rem;
 }
@@ -135,6 +136,9 @@ a {
     /* Ensures the anchor inherits the text color */
 }
 
+.company {
+    color: rgb(137, 166, 245);
+}
 
 
 /* Small Devices (max-width: 576px) */
@@ -142,6 +146,14 @@ a {
 
     .navbar {
         padding: 5px 5px;
+    }
+
+    /* text indentation */
+    #about-section p,
+    #skills-info,
+    #hobbies p,
+    .p-journey {
+        text-indent: 3rem;
     }
 }
 
@@ -284,14 +296,31 @@ a {
     border: 1px solid #35a22c;
 }
 
+/*============================
+  Start of Poems
+=============================*/
+
+#poems-section {
+    background-color: #e7e7e7;
+}
+
 
 /*============================
   Start of Hobbies
 =============================*/
 
+#hobbies {
+    background-color: #ffffff;
+}
+
 #hobbies h5 {
     text-align: center;
 } 
+
+
+#hunger-index {
+    color: #e00000 !important;
+}
 
 
 /*============================
