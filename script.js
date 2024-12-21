@@ -1,3 +1,8 @@
+
+// Redirect to the new website immediately
+const newWebsiteURL = "https://veereshsurya.netlify.app/"; // Replace with your Netlify site URL
+window.location.href = newWebsiteURL;
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("poems-row");
 
